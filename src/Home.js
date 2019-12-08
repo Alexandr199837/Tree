@@ -28,7 +28,7 @@ class Home extends Component {
                 <button className ='App-button'>Производитель</button>
                 <button className ='App-button'>Поставщик</button>
                 <button className ='App-button'>Поступление</button>
-                <button className ='App-button'>Продажа</button>
+                <Link to='/sale'><button className ='App-button'>Продажа</button></Link>
                 <button className ='App-button'>История цены</button>
                 <button className ='App-button'>Единица измерения</button>
             </div>
