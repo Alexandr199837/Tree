@@ -2,17 +2,13 @@ import React, {Component} from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import DropdownTreeSelect from "react-dropdown-tree-select";
+import data from "./data.json";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
-import {render} from 'react-dom';
-import { makeData, Logo, Tips } from "./Utils";
-import matchSorter from 'match-sorter'
-import ReactTable from "react";
+import SpanningTable from './demo';
 
 
-
-
-class Sale extends Component {
+class Head extends Component {
   render() {
     return <div className='App-header'>
       <div className='App-font'>Аптека+   </div>  
@@ -23,9 +19,25 @@ class Sale extends Component {
   }
 }
 
+class Medicine extends Component{ 
+    render() {
+   
+    return (
 
+    <div >
+      <Head/>
+     
+                   
+              <Link to='/'><button className='App-button-home'>Главная страница</button></Link>
+              <SpanningTable/>
+
+          </div>
+
+    );
+  }
+}
 
 
                 
 
-export default Sale;
+export default Medicine;

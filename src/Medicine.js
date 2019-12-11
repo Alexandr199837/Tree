@@ -41,7 +41,7 @@ class Medicine extends Component{
      
                    
               <Link to='/'><button className='App-button-home'>Главная страница</button></Link>
-              <DropdownTreeSelect data={data} onChange={onChange} className="mdl-demo" /> 
+              <DropdownTreeSelect data={data} onChange={onChange} className='mdl-demo' /> 
 
           </div>
 

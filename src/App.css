@@ -110,10 +110,13 @@
 
 
 .mdl-demo {
-  margin-right: 30px;
+  margin-right: 300px;
     margin-bottom: 50px;
     width: 300px;
     border-block-start: 50px;
+    line-height: 1;
+    
+    
 }
 body {
   margin: 0px;
