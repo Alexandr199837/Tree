@@ -11,7 +11,10 @@ const TAX_RATE = 0.07;
 
 const useStyles = makeStyles({
   root: {
-    width: '100%',
+    position: "absolute",
+    right: '.20em',
+    top:'4em',
+    width: '90%',
     overflowX: 'auto',
   },
   table: {
@@ -44,7 +47,7 @@ const rows = [
 
 const invoiceSubtotal = subtotal(rows);
 const invoiceTaxes = TAX_RATE * invoiceSubtotal;
-const invoiceTotal = invoiceTaxes + invoiceSubtotal;
+const invoiceTotal = -invoiceTaxes + invoiceSubtotal;
 
 export default function SpanningTable() {
   const classes = useStyles();
@@ -83,7 +86,7 @@ export default function SpanningTable() {
             <TableCell align="right">{ccyFormat(invoiceSubtotal)}</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Налог</TableCell>
+            <TableCell>Скидка</TableCell>
             <TableCell align="right">{`${(TAX_RATE * 100).toFixed(0)} %`}</TableCell>
             <TableCell align="right">{ccyFormat(invoiceTaxes)}</TableCell>
           </TableRow>

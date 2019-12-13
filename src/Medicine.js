@@ -42,6 +42,15 @@ class Medicine extends Component{
                    
               <Link to='/'><button className='App-button-home'>Главная страница</button></Link>
               <DropdownTreeSelect data={data} onChange={onChange} className='mdl-demo' /> 
+              <div className='bgr'>
+                <Link to='/med'><button className ='App-button'>Лекарства</button></Link>
+                <button className ='App-button'>Производитель</button>
+                <button className ='App-button'>Поставщик</button>
+                <button className ='App-button'>Поступление</button>
+                <Link to='/sale'><button className ='App-button'>Продажа</button></Link>
+                <button className ='App-button'>История цены</button>
+                <button className ='App-button'>Единица измерения</button>
+            </div>
 
           </div>
 
