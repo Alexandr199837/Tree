@@ -10,7 +10,7 @@ class Head extends Component {
       return <div className='App-header'>
         <div className='App-font'>Аптека+   </div>  
       <div>
-        <button className='App-button-login'>Login</button>     
+        <button className='App-button-login'>Войти</button>     
         </div>
         </div>
     }
