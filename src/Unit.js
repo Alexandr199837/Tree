@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import './App.css';
-import SpanningTable from './demo';
+import SimpleTable from './unittable';
 import LeftPanel from './LeftPanel';
 
 class Head extends Component {
@@ -16,7 +16,7 @@ class Head extends Component {
   }
 }
 
-class Sale extends Component{ 
+class Unit extends Component{ 
     render() {
    
     return (
@@ -27,7 +27,7 @@ class Sale extends Component{
                    
               <Link to='/'><button className='App-button-home'>Главная страница</button></Link>
               <LeftPanel/>
-              <SpanningTable/>
+              <SimpleTable/>
 
           </div>
 
@@ -38,4 +38,4 @@ class Sale extends Component{
 
                 
 
-export default Sale;
+export default Unit;

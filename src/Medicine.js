@@ -3,6 +3,7 @@ import './App.css';
 import { Link } from 'react-router-dom';
 import './App.css';
 import MaterialTableDemo from './editable';
+import LeftPanel from './LeftPanel';
 
 
 class Head extends Component {
@@ -27,16 +28,9 @@ class Medicine extends Component{
                    
               <Link to='/'><button className='App-button-home'>Главная страница</button></Link>  
                        
-              <div className='bgr'>
-                <Link to='/med'><button className ='App-button'>Лекарства</button></Link>
-                <button className ='App-button'>Производитель</button>
-                <button className ='App-button'>Поставщик</button>
-                <button className ='App-button'>Поступление</button>
-                <Link to='/sale'><button className ='App-button'>Продажа</button></Link>
-                <button className ='App-button'>История цены</button>
-                <button className ='App-button'>Единица измерения</button>
-            </div>
-<MaterialTableDemo/> 
+                <LeftPanel/>
+
+                <MaterialTableDemo/> 
           </div>
 
     );

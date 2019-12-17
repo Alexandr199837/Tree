@@ -24,7 +24,7 @@ const useStyles = makeStyles({
       position: "absolute",
       right: '.20em',
       top:'4em',
-      width: '50%',
+      width: '90%',
       overflowX: 'auto',
     },
     table: {
@@ -74,7 +74,8 @@ const classes = useStyles();
   });
 
   return (
-    <MaterialTable className={classes.root}
+    <div className={classes.root}>
+    <MaterialTable 
     icons = {tableIcons}
       title=""
       columns={state.columns}
@@ -116,6 +117,6 @@ const classes = useStyles();
             }, 600);
           }),
       }}
-    />
+    /></div>
   );
 }
